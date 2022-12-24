@@ -24,6 +24,12 @@ sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/java/jdk1.
 
 sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/java/jdk1.8.0_231/bin/javaws" 1
 
+for openJDK
+=========================================================
+sudo apt install openjdk-17-jdk openjdk-17-jre
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$PATH:$JAVA_HOME/bin
+
 to edit bashrc
 ===========================
 sudo gedit ~/.bashrc
